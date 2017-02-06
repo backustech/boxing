@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_377cb9a9ed22ad446afa5df0cef34022751661f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_af441a87931bc1b4c8da6f7ecc9f9b92a5053ebf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_ede4d3fbc8b08a163cf671e59b47b766ff2d4151.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_a7602cce43566448fb52534e3d671822624c3203.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_1fd2bfcacf6ba318464dfff441f5b865c041e4b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_e03573937582aac4ca36fa6d479ac01413504da1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0ff265b4141de70fb2637f818787b53a245ce967">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.0_f3887136c81a7c8608ae3014274ea9783586ee91.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_4d555388eeb37e6c5b5ee7dc572e1e153dadda76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/glide-3.7.0_9ad918924d9c6a7d5365ed20f7cfd60b8b44c272.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_b6e105328a1983ad90250212b88c0c34ddb4820e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.bilibili/boxing/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5cbf2f9def55e9a94e967c2c5b62499edb59e97">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.bilibili-boxing-0.1.0_61dcb708660686e5d84a2b0034852b5388cde679.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fbd300a294fd5ad1ecb0a25f956d6a318b6ce68e">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.0_5dbbb7b40e33bdf4b44bb7bea55507b3346f0537.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_d8d599006b73b16df1ca79ee4bd102cb9fa693ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.facebook.fresco/animated-base/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="04a5d6afa35725f00f27bf2cc6ac5e7e04914692">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-animated-base-1.0.0_5b3d9f643e674109659c5f07407818f7397d91a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_4400580e7582103b9f822f7220f31b5cda07da5a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_21897cca5d8f0958862848322daa6ea608022f19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_231717b336d7c0a406f29319862b007fdf9ba9b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="07b4097115bb7e68aa0123fd9fb6873c433f23a3">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.0_365e8bc1f3f52a6f4ed1e14886d2faa550eef57b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_57d4c1fa0499be1860a20e8a4d462e8783dfe5ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_efb9a518f43d78f2af7247fca0f85aa5ee3e8404.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_b3fed0065ddde2805cb024aeceab024c68880b87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_7586741b9d0020c254ffa9a74ac0fec3e9ba036d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_f24a2de605b2af1e20cf280685cc468a915742ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.bilibili/boxing-impl/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="990f59351ca1840fa280746d11a41302b6bf79bb">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.bilibili-boxing-impl-0.1.0_ba5e38c94f5ca360b35d8fcf9c64c536fb0237c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="82da2e1fff613de7a111e04c38f9c7e654ef3116">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.0_4f29d3049100aec3bb57824ea61b3457a1030d2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_4b75bd14fd16e25c1e461e4f7e1af2b5475f213e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.yalantis/ucrop/2.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="515960f41b2032bbff45af39c0c9628db4956d3e">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.yalantis-ucrop-2.2.0_8ddf2902aa896873c539dac64d46f25cdb77eac5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_35954110b597e0e6389839e176a266878f8344dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_695f370ef2a68cbb4411a77f5115aa851e1f33f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5c352647cf4de6a584197465649ea8a76875bbfa">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.0_39e6255aec13934ea7ac35dd183641a9502d7c41.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.facebook.fresco/animated-gif/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5f79b1232c817718a764464331f75b7c6b0b4da2">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-animated-gif-1.0.0_98f2992509d34eeecd8d2fd39939511689a9908b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.chensl.rotatephotoview/rotatephotoview/1.0.5/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="94054221d45faac5ef80bc43fa3223a5836f4983">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.chensl.rotatephotoview-rotatephotoview-1.0.5_463d0150d5f4c227dda41c5b8776b45abc54aeaf.jar" />
+    </item>
+
+</items>
