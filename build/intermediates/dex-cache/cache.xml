@@ -21,6 +21,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.github.backustech/boxing-impl/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="990f59351ca1840fa280746d11a41302b6bf79bb">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.github.backustech-boxing-impl-unspecified_a0199302a1af115055b36c6a6556677cc7f6a63d.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -117,15 +126,6 @@
         revision="25.0.1"
         sha1="f83b00041ecfba705603fec40363416c7de69719">
         <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_695f370ef2a68cbb4411a77f5115aa851e1f33f1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/boxing/boxing-impl/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="990f59351ca1840fa280746d11a41302b6bf79bb">
-        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/boxing-boxing-impl-unspecified_b17525d59a4e428b1302706a4fe36a5d9d035b96.jar" />
     </item>
     <item
         is-multidex="false"

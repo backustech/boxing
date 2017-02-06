@@ -60,5 +60,6 @@ dependencies {
         exclude module: 'recyclerview-v7'
     }
     //compile project(':boxing')
-    compile 'com.github.backustech:boxing:v6.0'
+    compile 'com.bilibili:boxing:0.1.0'
+
 }
