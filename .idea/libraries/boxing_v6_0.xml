@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="boxing-v6.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/boxing-impl/build/intermediates/exploded-aar/com.github.backustech/boxing/v6.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/boxing-impl/build/intermediates/exploded-aar/com.github.backustech/boxing/v6.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -21,15 +21,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.github.backustech/boxing-impl/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="990f59351ca1840fa280746d11a41302b6bf79bb">
-        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.github.backustech-boxing-impl-unspecified_a0199302a1af115055b36c6a6556677cc7f6a63d.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -75,6 +66,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.github.backustech/boxing/v6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2d6cb61a21917b2bdb7843cb94654e114cce964e">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.github.backustech-boxing-v6.0_f231b0df6712bec4a0d1b9a64fee6fb0e30727b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -117,6 +117,15 @@
         revision="25.0.1"
         sha1="f83b00041ecfba705603fec40363416c7de69719">
         <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_695f370ef2a68cbb4411a77f5115aa851e1f33f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/boxing/boxing-impl/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="990f59351ca1840fa280746d11a41302b6bf79bb">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/boxing-boxing-impl-unspecified_b17525d59a4e428b1302706a4fe36a5d9d035b96.jar" />
     </item>
     <item
         is-multidex="false"
@@ -171,15 +180,6 @@
         revision="25.0.1"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_b6e105328a1983ad90250212b88c0c34ddb4820e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.bilibili/boxing/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e5cbf2f9def55e9a94e967c2c5b62499edb59e97">
-        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.bilibili-boxing-0.1.0_61dcb708660686e5d84a2b0034852b5388cde679.jar" />
     </item>
     <item
         is-multidex="false"

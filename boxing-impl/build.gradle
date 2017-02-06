@@ -16,7 +16,8 @@
  */
 
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.backustech'
 
 android {
     compileSdkVersion 25
@@ -58,5 +59,6 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-v4'
         exclude module: 'recyclerview-v7'
     }
-    compile project(':boxing')
+    //compile project(':boxing')
+    compile 'com.github.backustech:boxing:v6.0'
 }
