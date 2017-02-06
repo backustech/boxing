@@ -18,16 +18,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.backustech'
-/*apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'*/
-/*def siteUrl = "https://github.com/Bilibili/boxing"
-def gitUrl = "https://github.com/Bilibili/boxing.git"*/
-
-group = "com.bilibili"
-version = "0.1.0"
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 25
     buildToolsVersion "25.0.1"
 
     defaultConfig {
@@ -55,71 +48,8 @@ android {
     }
 }
 
-install {
-    repositories.mavenInstaller {
-        // This generates POM.xml with proper paramters
-        pom.project {
-            packaging 'aar'
-
-            // Add your description here
-            name 'boxing-impl'
-            url siteUrl
-
-            // Set your license
-            licenses {
-                license {
-                    name 'The Apache Software License, Version 2.0'
-                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                }
-            }
-
-            developers {
-                developer {
-                    id 'chensl'
-                    name 'chensiliang'
-                    email '284565035@qq.com'
-                }
-            }
-
-            scm {
-                connection gitUrl
-                developerConnection gitUrl
-                url siteUrl
-            }
-        }
-    }
-}
-
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.sourceFiles
-    classifier = 'sources'
-}
-
-artifacts {
-    archives sourcesJar
-}
-
-Properties properties = new Properties()
-if (project.rootProject.findProject('local.properties') != null) {
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-}
 
 
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
-
-    configurations = ['archives']
-
-    pkg {
-        repo = "maven"
-        name = "boxing-imply"
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = ["Apache-2.0"]
-        publish = true
-    }
-}
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
