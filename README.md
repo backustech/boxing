@@ -1,6 +1,6 @@
 ## boxing
 ---
-Android multi-media selector based on MVP mode.[中文文档](README_CN.md)
+Android multi-media selector based on MVP mode.[中文文档](README_CN.md)  [![Build Status](https://travis-ci.org/Bilibili/boxing.svg?branch=master)](https://travis-ci.org/Bilibili/boxing)
 
 #### boxing Inside: 
 [![bili](screenshot/bili.webp)](https://play.google.com/store/apps/details?id=tv.danmaku.bili)
@@ -27,7 +27,7 @@ Core version
 <dependency>                       
   	<groupId>com.bilibili</groupId>  
   	<artifactId>boxing</artifactId>  
-  	<version>0.1.0</version>
+  	<version>0.2.0</version>
   	<type>pom</type>                
 </dependency>                      		
 ```
@@ -38,7 +38,7 @@ UI version
 <dependency>                          
   	<groupId>com.bilibili</groupId>     
   	<artifactId>boxing-impl</artifactId>
-  	<version>0.1.0</version>   
+  	<version>0.2.0</version>   
   	<type>pom</type>                    
 </dependency>                         
 ```
@@ -47,12 +47,12 @@ UI version
 
 Core version              
 ```java
-compile 'com.bilibili:boxing:0.1.0'
+compile 'com.bilibili:boxing:0.2.0'
 ```
 
 UI version
 ```java
-compile 'com.bilibili:boxing-impl:0.1.0'
+compile 'com.bilibili:boxing-impl:0.2.0'
 ```
 
 ### Preview
