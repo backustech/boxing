@@ -93,15 +93,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/com.bilibili/boxing/0.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="8d4285828d1c8c398d07c96065b9183e6904ae20">
-        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.bilibili-boxing-0.2.0_aa4bc9677087853ef25c0eaccb5ef586564fd6d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/tygzx/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -234,6 +225,15 @@
         revision="25.0.1"
         sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
         <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_b3fed0065ddde2805cb024aeceab024c68880b87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tygzx/Work/boxing/app/build/intermediates/exploded-aar/boxing/boxing/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="38dc4fb639d7608bc47b74b78d2329d6479abc3c">
+        <dex dex="/Users/tygzx/Work/boxing/app/build/intermediates/pre-dexed/debug/boxing-boxing-unspecified_18baca4ed762c38cd9884ecceebcfd76de06cc6a.jar" />
     </item>
     <item
         is-multidex="false"
