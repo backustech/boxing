@@ -67,5 +67,5 @@ dependencies {
     //    androidTestCompile 'com.android.support.test:runner:0.5'
     //    androidTestCompile 'junit:junit:4.12'
     //    compile project(":boxing")
-    compile project(':boxing')
+    compile 'com.bilibili:boxing:0.2.0'
 }
