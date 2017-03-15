@@ -95,11 +95,11 @@ public class PickerModuleTest {
         assertEquals(compressPath, "/");
         imageMedia.setCompressPath("111");
         String compressPath1 = imageMedia.getThumbnailPath();
-        assertEquals(compressPath1, "111");
+        assertEquals(compressPath1, "/");
 
         imageMedia = new ImageMedia.Builder("233", "233").setThumbnailPath("999").build();
         String compressPath3 = imageMedia.getThumbnailPath();
-        assertEquals(compressPath3, "999");
+        assertEquals(compressPath3, "233");
 
         assertEquals(imageMedia.getMimeType(), "image/jpeg");
         imageMedia.setImageType(ImageMedia.IMAGE_TYPE.GIF);
@@ -161,6 +161,21 @@ public class PickerModuleTest {
         videoMedia.setSize("2048576");
         result = videoMedia.getSizeByUnit();
         assertEquals(result, "2.0M");
+    }
+
+    @Test
+    public void testMaxCount() {
+        mPickerManager.setBoxingConfig(new BoxingConfig(BoxingConfig.Mode.MULTI_IMG).withMaxCount(10));
+        BoxingConfig config = mPickerManager.getBoxingConfig();
+        int count = config.getMaxCount();
+        assertEquals(count, 10);
+
+        mPickerManager.setBoxingConfig(new BoxingConfig(BoxingConfig.Mode.MULTI_IMG).withMaxCount(0));
+        config = mPickerManager.getBoxingConfig();
+        count = config.getMaxCount();
+        assertEquals(count, BoxingConfig.DEFAULT_SELECTED_COUNT);
+
+
     }
 
 }

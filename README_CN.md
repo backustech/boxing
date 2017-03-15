@@ -7,11 +7,11 @@
 
 ### 特性
 ---
+- 支持自定义UI
 - 支持多/单图片选择和预览，单图裁剪功能
 - 支持gif
 - 支持视频选择功能
 - 提供图片压缩
-- 支持自定义UI
 
 ### Download                                                                  
 ---
@@ -24,7 +24,7 @@
 <dependency>                                                      
   	<groupId>com.bilibili</groupId>                                    
   	<artifactId>boxing</artifactId>                                    
-  	<version>0.2.0</version>                                       
+  	<version>0.3.5</version>                                       
   	<type>pom</type>                                                
 </dependency> 
 ```
@@ -33,7 +33,7 @@
 <dependency>                                                          
   	<groupId>com.bilibili</groupId>                                    
   	<artifactId>boxing-impl</artifactId>                              
-  	<version>0.2.0</version>                                       
+  	<version>0.3.5</version>                                       
   	<type>pom</type>                                                  
 </dependency>                                                      
 ```
@@ -41,11 +41,11 @@
   ​                                                    
   核心版本                                                                 
 ```java                                                                         
-compile 'com.bilibili:boxing:0.2.0'                              
+compile 'com.bilibili:boxing:0.3.5'                              
 ```
 实现版本                                                                   
 ```java                                                                        
-compile 'com.bilibili:boxing-impl:0.2.0'               
+compile 'com.bilibili:boxing-impl:0.3.5'               
 ```
 
 ### 预览图
@@ -70,7 +70,7 @@ BoxingCrop.getInstance().init(new IBoxingCrop());  // 需要实现 IBoxingCrop
   指定模式：图片单选，多选，视频单选，是否支持gif和相机。
 ```java
 BoxingConfig config = new BoxingConfig(Mode); // Mode：Mode.SINGLE_IMG, Mode.MULTI_IMG, Mode.VIDEO
-config.needCamera().needGif() // 支持gif和相机
+config.needCamera().needGif().withMaxCount(9); // 支持gif,相机，设置最大选图数
 ```
 - 初始化Boxing，构造Intent并启动
 ```java

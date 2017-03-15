@@ -31,7 +31,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-
 import com.bilibili.boxing.AbsBoxingViewActivity;
 import com.bilibili.boxing.Boxing;
 import com.bilibili.boxing.model.BoxingManager;
@@ -40,7 +39,6 @@ import com.bilibili.boxing.model.entity.impl.ImageMedia;
 import com.bilibili.boxing.model.task.IMediaTask;
 import com.bilibili.boxing_impl.R;
 import com.bilibili.boxing_impl.view.HackyViewPager;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,7 +51,6 @@ public class BoxingViewActivity extends AbsBoxingViewActivity {
     public static final String EXTRA_TYPE_BACK = "com.bilibili.boxing_impl.ui.BoxingViewActivity.type_back";
 
     private static final int MAX_NUMBER = 9;
-
     HackyViewPager mGallery;
     ProgressBar mProgressBar;
 
@@ -107,7 +104,8 @@ public class BoxingViewActivity extends AbsBoxingViewActivity {
         if (mNeedLoading && mImages == null) {
             mImages = new ArrayList<>();
         } else {
-            mImages = mSelectedImages;
+            mImages = new ArrayList<>();
+            mImages.addAll(mSelectedImages);
         }
     }
 
@@ -174,7 +172,8 @@ public class BoxingViewActivity extends AbsBoxingViewActivity {
                 return false;
             }
             if (mSelectedImages.size() >= MAX_NUMBER && !mCurrentImageItem.isSelected()) {
-                Toast.makeText(this, R.string.max_image_over, Toast.LENGTH_SHORT).show();
+                String warning = getString(R.string.max_image_over_fmt, MAX_NUMBER);
+                Toast.makeText(this, warning, Toast.LENGTH_SHORT).show();
                 return true;
             }
             if (mCurrentImageItem.isSelected()) {
@@ -222,7 +221,7 @@ public class BoxingViewActivity extends AbsBoxingViewActivity {
                     , String.valueOf(mSelectedImages.size())));
             mProgressBar.setVisibility(View.GONE);
             mGallery.setVisibility(View.VISIBLE);
-            mAdapter.setMedias(mSelectedImages);
+            mAdapter.setMedias(mImages);
         } else {
             loadMedia(mAlbumId, mStartPos, mCurrentPage);
             mAdapter.setMedias(mImages);
@@ -320,7 +319,7 @@ public class BoxingViewActivity extends AbsBoxingViewActivity {
 
         @Override
         public void onPageSelected(int position) {
-            if (position < mImages.size()) {
+            if (mToolbar != null && position < mImages.size()) {
                 mToolbar.setTitle(getString(R.string.image_preview_title_fmt, String.valueOf(position + 1)
                         , mNeedLoading ? String.valueOf(mTotalCount) : String.valueOf(mImages.size())));
                 mCurrentImageItem = (ImageMedia) mImages.get(position);

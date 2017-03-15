@@ -7,11 +7,11 @@ Android multi-media selector based on MVP mode.[中文文档](README_CN.md)  [![
 
 ### Feature
 ---
+- Custom UI
 - Multiple/single selection, preview and crop function
 - Gif support
 - Video selection
 - Image compression
-- Custom UI for selector.
 
 ### Download
 ---
@@ -27,7 +27,7 @@ Core version
 <dependency>                       
   	<groupId>com.bilibili</groupId>  
   	<artifactId>boxing</artifactId>  
-  	<version>0.2.0</version>
+  	<version>0.3.5</version>
   	<type>pom</type>                
 </dependency>                      		
 ```
@@ -38,7 +38,7 @@ UI version
 <dependency>                          
   	<groupId>com.bilibili</groupId>     
   	<artifactId>boxing-impl</artifactId>
-  	<version>0.2.0</version>   
+  	<version>0.3.5</version>   
   	<type>pom</type>                    
 </dependency>                         
 ```
@@ -47,12 +47,12 @@ UI version
 
 Core version              
 ```java
-compile 'com.bilibili:boxing:0.2.0'
+compile 'com.bilibili:boxing:0.3.5'
 ```
 
 UI version
 ```java
-compile 'com.bilibili:boxing-impl:0.2.0'
+compile 'com.bilibili:boxing-impl:0.3.5'
 ```
 
 ### Preview
@@ -76,7 +76,7 @@ BoxingCrop.getInstance().init(new IBoxingCrop());  // a class implements IBoxing
   Specify the mode(Mode.SINGLE_IMG, Mode.MULTI_IMG, Mode.VIDEO) with camera and gif support. 
 ```java
 BoxingConfig config = new BoxingConfig(Mode); // Mode：Mode.SINGLE_IMG, Mode.MULTI_IMG, Mode.VIDEO
-config.needCamera().needGif() // camera and gif support
+config.needCamera().needGif().withMaxCount(9) // camera, gif support, set selected images count
 ```
 - Get Boxing, set Intent and call start
 ```java

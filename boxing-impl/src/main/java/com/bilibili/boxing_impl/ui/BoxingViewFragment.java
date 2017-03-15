@@ -37,7 +37,6 @@ import android.widget.PopupWindow;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.bilibili.boxing.AbsBoxingViewFragment;
 import com.bilibili.boxing.Boxing;
 import com.bilibili.boxing.model.BoxingManager;
@@ -84,6 +83,7 @@ public class BoxingViewFragment extends AbsBoxingViewFragment implements View.On
     private TextView mTitleTxt;
     private PopupWindow mAlbumPopWindow;
     private ProgressBar mLoadingView;
+
 
     public static BoxingViewFragment newInstance() {
         return new BoxingViewFragment();
@@ -167,7 +167,7 @@ public class BoxingViewFragment extends AbsBoxingViewFragment implements View.On
     }
 
     @Override
-    public void showMedia(List<BaseMedia> medias, int allCount) {
+    public void showMedia(@Nullable List<BaseMedia> medias, int allCount) {
         if (medias == null || isEmptyData(medias)
                 && isEmptyData(mMediaAdapter.getAllMedias())) {
             showEmptyData();
@@ -474,7 +474,8 @@ public class BoxingViewFragment extends AbsBoxingViewFragment implements View.On
             List<BaseMedia> selectedMedias = mMediaAdapter.getSelectedMedias();
             if (isSelected) {
                 if (selectedMedias.size() >= MAX_SELECTED_COUNT) {
-                    Toast.makeText(getActivity(), R.string.too_many_picture, Toast.LENGTH_SHORT).show();
+                    String warning = getString(R.string.too_many_picture_fmt, MAX_SELECTED_COUNT);
+                    Toast.makeText(getActivity(), warning, Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (!selectedMedias.contains(photoMedia)) {

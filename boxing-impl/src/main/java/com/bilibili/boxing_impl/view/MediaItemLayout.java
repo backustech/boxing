@@ -139,6 +139,7 @@ public class MediaItemLayout extends FrameLayout {
         if (mCoverImg == null || TextUtils.isEmpty(path)) {
             return;
         }
+        mCoverImg.setTag(R.string.app_name, path);
         BoxingMediaLoader.getInstance().displayThumbnail(mCoverImg, path, mScreenType.getValue(), mScreenType.getValue());
     }
 
