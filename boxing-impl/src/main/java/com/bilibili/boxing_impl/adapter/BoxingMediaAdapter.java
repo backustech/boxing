@@ -96,7 +96,7 @@ public class BoxingMediaAdapter extends RecyclerView.Adapter {
             final BaseMedia media = mMedias.get(pos);
             final ImageViewHolder vh = (ImageViewHolder) holder;
 
-            vh.mItemLayout.setDrawable(mDefaultDrawable);
+            //vh.mItemLayout.setDrawable(mDefaultDrawable);
             vh.mItemLayout.setTag(media);
 
             vh.mItemLayout.setOnClickListener(mOnMediaClickListener);

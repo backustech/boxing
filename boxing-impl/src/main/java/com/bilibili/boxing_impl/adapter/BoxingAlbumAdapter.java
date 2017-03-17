@@ -18,6 +18,8 @@
 package com.bilibili.boxing_impl.adapter;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +31,14 @@ import com.bilibili.boxing.BoxingMediaLoader;
 import com.bilibili.boxing.model.entity.AlbumEntity;
 import com.bilibili.boxing.model.entity.impl.ImageMedia;
 import com.bilibili.boxing_impl.R;
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.interfaces.DraweeController;
+import com.facebook.drawee.view.SimpleDraweeView;
+import com.facebook.imagepipeline.common.ResizeOptions;
+import com.facebook.imagepipeline.request.ImageRequest;
+import com.facebook.imagepipeline.request.ImageRequestBuilder;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,6 +56,8 @@ public class BoxingAlbumAdapter extends RecyclerView.Adapter implements View.OnC
     private List<AlbumEntity> mAlums;
     private LayoutInflater mInflater;
     private OnAlbumClickListener mAlbumOnClickListener;
+
+    private int MAX_IMAGE_SIZE= (int) (Resources.getSystem().getDisplayMetrics().density*50);
 
     public BoxingAlbumAdapter(Context context) {
         this.mAlums = new ArrayList<>();
@@ -74,7 +85,14 @@ public class BoxingAlbumAdapter extends RecyclerView.Adapter implements View.OnC
             albumViewHolder.mNameTxt.setText(album.mBucketName);
             ImageMedia media = (ImageMedia) album.mImageList.get(0);
             if (media != null) {
-                BoxingMediaLoader.getInstance().displayThumbnail(albumViewHolder.mCoverImg, media.getPath(), 50, 50);
+                ImageRequest request = ImageRequestBuilder
+                        .newBuilderWithSource(Uri.fromFile(new File(media.getPath())))
+                        .setAutoRotateEnabled(true)
+                        .setLocalThumbnailPreviewsEnabled(true)
+                        .setResizeOptions(new ResizeOptions(MAX_IMAGE_SIZE, MAX_IMAGE_SIZE))//不设置宽高，会加载大图导致卡顿
+                        .build();
+                DraweeController controller= Fresco.newDraweeControllerBuilder().setImageRequest(request).build();
+                albumViewHolder.mCoverImg.setController(controller);
             }
             albumViewHolder.mLayout.setTag(adapterPos);
             albumViewHolder.mLayout.setOnClickListener(this);
@@ -128,7 +146,7 @@ public class BoxingAlbumAdapter extends RecyclerView.Adapter implements View.OnC
     }
 
     private static class AlbumViewHolder extends RecyclerView.ViewHolder {
-        ImageView mCoverImg;
+        SimpleDraweeView mCoverImg;
         TextView mNameTxt;
         TextView mSizeTxt;
         View mLayout;
@@ -136,7 +154,7 @@ public class BoxingAlbumAdapter extends RecyclerView.Adapter implements View.OnC
 
         AlbumViewHolder(final View itemView) {
             super(itemView);
-            mCoverImg = (ImageView) itemView.findViewById(R.id.album_thumbnail);
+            mCoverImg = (SimpleDraweeView) itemView.findViewById(R.id.album_thumbnail);
             mNameTxt = (TextView) itemView.findViewById(R.id.album_name);
             mSizeTxt = (TextView) itemView.findViewById(R.id.album_size);
             mLayout = itemView.findViewById(R.id.album_layout);

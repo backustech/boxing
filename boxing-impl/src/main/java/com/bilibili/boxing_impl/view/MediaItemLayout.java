@@ -19,7 +19,9 @@ package com.bilibili.boxing_impl.view;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -28,12 +30,19 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.bilibili.boxing.BoxingMediaLoader;
 import com.bilibili.boxing.model.entity.BaseMedia;
 import com.bilibili.boxing.model.entity.impl.ImageMedia;
 import com.bilibili.boxing.model.entity.impl.VideoMedia;
 import com.bilibili.boxing_impl.R;
 import com.bilibili.boxing_impl.WindowManagerHelper;
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.interfaces.DraweeController;
+import com.facebook.drawee.view.SimpleDraweeView;
+import com.facebook.imagepipeline.common.ResizeOptions;
+import com.facebook.imagepipeline.request.ImageRequest;
+import com.facebook.imagepipeline.request.ImageRequestBuilder;
+
+import java.io.File;
 
 
 /**
@@ -47,8 +56,10 @@ public class MediaItemLayout extends FrameLayout {
     private ImageView mCheckImg;
     private View mVideoLayout;
     private View mFontLayout;
-    private ImageView mCoverImg;
+    private SimpleDraweeView mCoverImg;
     private ScreenType mScreenType;
+
+    private int MAX_IMAGE_SIZE= (int) (Resources.getSystem().getDisplayMetrics().density*50);
 
     private enum ScreenType {
         SMALL(100), NORMAL(180), LARGE(320);
@@ -74,7 +85,7 @@ public class MediaItemLayout extends FrameLayout {
     public MediaItemLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         View view = LayoutInflater.from(context).inflate(R.layout.layout_media_item, this, true);
-        mCoverImg = (ImageView) view.findViewById(R.id.media_item);
+        mCoverImg = (SimpleDraweeView) view.findViewById(R.id.media_item);
         mCheckImg = (ImageView) view.findViewById(R.id.media_item_check);
         mVideoLayout = view.findViewById(R.id.video_layout);
         mFontLayout = view.findViewById(R.id.media_font_layout);
@@ -140,7 +151,15 @@ public class MediaItemLayout extends FrameLayout {
             return;
         }
         mCoverImg.setTag(R.string.app_name, path);
-        BoxingMediaLoader.getInstance().displayThumbnail(mCoverImg, path, mScreenType.getValue(), mScreenType.getValue());
+
+        ImageRequest request = ImageRequestBuilder
+                .newBuilderWithSource(Uri.fromFile(new File(path)))
+                .setAutoRotateEnabled(true)
+                .setLocalThumbnailPreviewsEnabled(true)
+                .setResizeOptions(new ResizeOptions(MAX_IMAGE_SIZE, MAX_IMAGE_SIZE))//不设置宽高，会加载大图导致卡顿
+                .build();
+        DraweeController controller= Fresco.newDraweeControllerBuilder().setImageRequest(request).build();
+        mCoverImg.setController(controller);
     }
 
     @SuppressWarnings("deprecation")
@@ -153,5 +172,6 @@ public class MediaItemLayout extends FrameLayout {
             mCheckImg.setImageDrawable(getResources().getDrawable(R.drawable.ic_unchecked));
         }
     }
+
 
 }
