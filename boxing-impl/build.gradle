@@ -19,7 +19,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.github.backustech'
-version = "0.3.5"
+version = "0.3.6"
 
 
 android {
@@ -30,7 +30,7 @@ android {
         minSdkVersion rootProject.ext.MIN_SDK_VERSION
         targetSdkVersion 22
         versionCode 1
-        versionName "0.3.5"
+        versionName "0.3.6"
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
 
