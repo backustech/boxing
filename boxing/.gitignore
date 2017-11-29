@@ -8,7 +8,7 @@ proguard/
 *.log
 .idea
 *.iml
-
+#temp
 # Generated files
 bin/
 gen/
